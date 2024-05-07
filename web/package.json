@@ -9,9 +9,11 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@types/lodash": "^4.17.1",
     "axios": "^1.6.8",
     "bootstrap": "^5.3.3",
     "bootstrap-icons": "^1.11.3",
+    "lodash": "^4.17.21",
     "next": "14.1.4",
     "npm": "^10.5.1",
     "react": "^18",
