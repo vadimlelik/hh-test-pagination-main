@@ -1,0 +1,13 @@
+version: '3.7'
+services:
+  postgres:
+    image: postgres
+    restart: always
+    environment:
+      POSTGRES_USER: vadim
+      POSTGRES_PASSWORD: secretPassword
+      POSTGRES_DB: test
+    ports:
+      - '5432:5432'
+    volumes:
+      - ./test_pagination_localhost-dump.sql:/docker-entrypoint-initdb.d/test_pagination_localhost-dump.sql
