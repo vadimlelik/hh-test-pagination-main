@@ -3,7 +3,7 @@ import { TypeOrmModule } from '@nestjs/typeorm';
 import { UsersModule } from './users/users.module';
 import { ConfigModule } from '@nestjs/config';
 
-const pg = new URL('postgresql://vadim:secretPassword@localhost:5432/test?sslmode=disable');
+const pg = new URL(process.env.APP_PG_URL);
 
 @Module({
   imports: [
